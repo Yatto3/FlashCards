@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #d1fae5;
+}
+
+h1{
+    user-select: none;
+    font-size: 2.5vw;
+    color: rgba(91, 176, 176, 0.931);
+}
+h1 > span{
+    color: #460455;
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards-board{
+    margin-bottom: 10vw;
+    width: 50vw;
+    height: 30vw;
+    border: 1px solid rgba(194, 245, 249, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.cards-board .card{
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height:20vw ;
+    border: 1px solid rgba(155, 189, 181, 0.494);
+    border-radius: 8px;
+    background-color: rgba(91, 176, 176, 0.631);
+    font-size: 2vw;
+    color: rgb(6, 41, 62);
+    transition: 0.4s cubic-bezier(0, 0, 0.1, 1.27);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+   
+}
+.card-back{
+    box-shadow: 1px -4px 31px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 1px -4px 31px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 1px -4px 31px 0px rgba(0,0,0,0.75);
+}
+.buttons{
+    padding: 30px;
+    border-radius: 8px;
+    width: 50vw;
+    /* border: 2px solid black; */
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right , rgba(202, 234, 240, 0.694) , rgba(85, 201, 193, 0.239));
+}
+.buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 3vw;
+    width: 3vw;
+    outline: none;
+    border: 1px solid rgba(155, 189, 181, 0.494);
+    border-radius: 50%;
+    font-size: 1.4vw;
+    color : white;
+    background-color: rgba(91, 176, 176, 0.43);
+    padding: 20px;
+}
